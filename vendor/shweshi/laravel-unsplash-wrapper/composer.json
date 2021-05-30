@@ -1,0 +1,29 @@
+{
+    "name": "shweshi/laravel-unsplash-wrapper",
+    "description": "A Laravel wrapper for Unsplash",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shashi Prakash Gautam",
+            "email": "contactmespg@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "shweshi\\LaravelUnsplashWrapper\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashUsersServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashPhotosServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashCollectionsServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashSearchServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "name": "marksitko/laravel-unsplash",
+    "description": "Provides a fluent Unsplash API for Laravel",
+    "keywords": [
+        "marksitko",
+        "laravel-unsplash"
+    ],
+    "homepage": "https://github.com/marksitko/laravel-unsplash",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mark Sitko",
+            "email": "mark@sitko-designing.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2|>=8.0",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarkSitko\\LaravelUnsplash\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MarkSitko\\LaravelUnsplash\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MarkSitko\\LaravelUnsplash\\UnsplashServiceProvider"
+            ],
+            "aliases": {
+                "Unsplash": "MarkSitko\\LaravelUnsplash\\UnsplashFacade"
+            }
+        }
+    }
+}
